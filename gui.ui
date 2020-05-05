@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object id="mainwindow" class="ttk.Frame">
+    <property name="height">200</property>
+    <property name="width">400</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <rows>
+        <row id="0">
+          <property name="minsize">100</property>
+          <property name="weight">1</property>
+        </row>
+        <row id="1">
+          <property name="minsize">50</property>
+          <property name="weight">1</property>
+        </row>
+      </rows>
+      <columns>
+        <column id="0">
+          <property name="minsize">100</property>
+          <property name="weight">1</property>
+        </column>
+        <column id="1">
+          <property name="weight">1</property>
+        </column>
+      </columns>
+    </layout>
+    <child>
+      <object id="submit_button" class="ttk.Button">
+        <property name="command">submit_button_click</property>
+        <property name="text" translatable="yes">GIMME THE MEMES!!!
+</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="memes" class="ttk.Entry">
+        <property name="cursor">arrow</property>
+        <property name="textvariable">string:request</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="answer" class="ttk.Label">
+        <property name="anchor">w</property>
+        <property name="cursor">arrow</property>
+        <property name="font">TkTextFont</property>
+        <property name="takefocus">true</property>
+        <property name="width">50</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
